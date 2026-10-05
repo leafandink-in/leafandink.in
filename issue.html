@@ -1,0 +1,27 @@
+<header class="masthead">
+  <nav class="top">
+    <a href="{{ "/archive/" | relative_url }}">Archive</a>
+    <a href="#subscribe">Subscribe</a>
+  </nav>
+  <p class="name">Leaf <span class="amp">&amp;</span> Ink<span class="amp">:</span></p>
+  <p class="issue">{{ include.doc.issue | capitalize }}, {{ include.doc.date | date: "%-d %B" }}</p>
+</header>
+
+<div class="head">
+  <h1>{{ include.doc.title }}</h1>
+  <p class="standfirst">{{ include.doc.standfirst }}</p>
+  <p class="kicker">{{ include.doc.kind }}, {{ include.doc.minutes }} minutes</p>
+</div>
+
+{% if include.doc.image %}
+<figure>
+  <img src="{{ include.doc.image | relative_url }}" alt="{{ include.doc.image_alt }}">
+</figure>
+{% endif %}
+
+<article class="story">
+  {{ include.body }}
+  <hr class="end">
+</article>
+
+{% include subscribe.html %}
