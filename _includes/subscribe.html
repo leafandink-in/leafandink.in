@@ -1,7 +1,12 @@
 <section class="foot" id="subscribe">
   <p>Leaf &amp; Ink publishes one story a week.</p>
   <p class="italic">Get each new story by email, every Sunday. Nothing else, ever.</p>
-  <form action="#" method="post">
+  <form action="https://formsubmit.co/primeclout@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New Leaf &amp; Ink subscriber">
+    <input type="hidden" name="_next" value="https://leafandink.in/thanks/">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
     <label for="email" hidden>Email address</label>
     <input id="email" name="email" type="email" placeholder="your email address" required>
     <button type="submit">Subscribe</button>
