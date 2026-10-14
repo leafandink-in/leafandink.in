@@ -1,38 +1,59 @@
+{% assign d = include.doc %}
+{% assign pic = d.picture | default: "left" %}
+{% if d.image == nil and pic != "strip" %}{% assign pic = "none" %}{% endif %}
+{% assign after = d.picture_after | default: 5 %}
 <header class="masthead">
   <nav class="top">
     <a href="{{ "/archive/" | relative_url }}">Archive</a>
     <a href="#subscribe">Subscribe</a>
   </nav>
   <p class="name">Leaf <span class="amp">&amp;</span> Ink<span class="amp">:</span></p>
-  <p class="issue">{{ include.doc.issue | capitalize }}, {{ include.doc.date | date: "%-d %B" }}</p>
+  <p class="issue">{{ d.issue | capitalize }}, {{ d.date | date: "%-d %B" }}</p>
   <i class="progress" aria-hidden="true"></i>
 </header>
 
-<div class="spread">
+<div class="spread pic-{{ pic }}">
   <aside class="side">
+    {% if pic == "panel" %}
+    <div class="bleed" style="background-image:url('{{ d.image | relative_url }}')" role="img" aria-label="{{ d.image_alt }}"></div>
+    {% endif %}
     <div class="head">
-      <h1>{{ include.doc.title }}</h1>
-      {% if include.doc.standfirst %}<p class="standfirst">{{ include.doc.standfirst }}</p>{% endif %}
-      <p class="kicker">{{ include.doc.kind }}, {{ include.doc.minutes }} minutes</p>
+      <h1>{{ d.title }}</h1>
+      {% if d.standfirst %}<p class="standfirst">{{ d.standfirst }}</p>{% endif %}
+      <p class="kicker">{{ d.kind }}, {{ d.minutes }} minutes</p>
     </div>
-    {% if include.doc.image %}
-    <figure>
-      <img src="{{ include.doc.image | relative_url }}" alt="{{ include.doc.image_alt }}">
-    </figure>
+    {% if pic == "left" %}
+    <figure><img src="{{ d.image | relative_url }}" alt="{{ d.image_alt }}"></figure>
     {% endif %}
   </aside>
 
   <div class="main">
+    {% if pic == "top" %}
+    <figure class="wide"><img src="{{ d.image | relative_url }}" alt="{{ d.image_alt }}"></figure>
+    {% elsif pic == "strip" %}
+    <div class="strip">{% for s in d.strip limit:3 %}<img src="{{ s | relative_url }}" alt="">{% endfor %}</div>
+    {% endif %}
+
     <article class="story">
-      {{ include.body }}
+      {% if pic == "middle" %}
+        {% assign parts = include.body | split: "</p>" %}
+        {% for part in parts %}{{ part }}{% unless forloop.last %}</p>{% endunless %}{% if forloop.index == after %}
+      <figure class="plate"><img src="{{ d.image | relative_url }}" alt="{{ d.image_alt }}">{% if d.caption %}<figcaption>{{ d.caption }}</figcaption>{% endif %}</figure>
+        {% endif %}{% endfor %}
+      {% else %}
+        {{ include.body }}
+      {% endif %}
+      {% if pic == "end" %}
+      <figure class="plate"><img src="{{ d.image | relative_url }}" alt="{{ d.image_alt }}">{% if d.caption %}<figcaption>{{ d.caption }}</figcaption>{% endif %}</figure>
+      {% endif %}
       <hr class="end">
     </article>
     {% include subscribe.html %}
   </div>
 </div>
 
-<div class="readbar" data-minutes="{{ include.doc.minutes }}">
-  <span class="t">{{ include.doc.title }}</span>
-  <span class="left">{{ include.doc.minutes }} min left</span>
+<div class="readbar" data-minutes="{{ d.minutes }}">
+  <span class="t">{{ d.title }}</span>
+  <span class="left">{{ d.minutes }} min left</span>
   <a href="#subscribe">Subscribe</a>
 </div>
