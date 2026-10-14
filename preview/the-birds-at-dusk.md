@@ -6,7 +6,7 @@ issue: "issue three"
 kind: "Fiction"
 minutes: 4
 standfirst: "She was slow at everything except noticing."
-image: /assets/birds-at-dusk.png
+image: /assets/birds-at-dusk.jpg
 image_alt: "A girl kneeling under a tamarind tree, her hand flat on the soil."
 date: 2026-10-18
 ---
