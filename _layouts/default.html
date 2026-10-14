@@ -32,8 +32,10 @@
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 
+html,body{overscroll-behavior-y:none}
 body{
   margin:0;
+  padding-top:var(--hdr);
   background:var(--paper);
   color:var(--ink);
   font-family:"Literata",Georgia,serif;
@@ -51,7 +53,7 @@ a:focus-visible,input:focus-visible,button:focus-visible{
 /* ---------- masthead: stays at the top ---------- */
 
 .masthead{
-  position:sticky;top:0;z-index:20;
+  position:fixed;top:0;left:0;right:0;z-index:20;
   background:var(--paper);
   border-bottom:1px solid var(--ink);
   padding:2.1rem var(--side) .6rem;
@@ -231,6 +233,7 @@ button{cursor:pointer;font-style:italic}
       left=rb&&rb.querySelector('.left'),
       mins=rb?parseInt(rb.getAttribute('data-minutes'),10)||0:0;
   function size(){if(hdr)root.style.setProperty('--hdr',hdr.offsetHeight+'px')}
+  size();
   function tick(){
     var max=root.scrollHeight-innerHeight,p=max>0?Math.min(1,scrollY/max):0;
     if(bar)bar.style.width=(p*100)+'%';
