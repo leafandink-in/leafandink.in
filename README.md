@@ -29,6 +29,41 @@ slug: the-promise
 
 `image` and `image_alt` can both be left out; the figure disappears.
 
+## Pictures: six ways to show them
+
+Add a `picture:` line to the story's settings block. Leave it out and you get `left`.
+
+| `picture:` | What it does | Best picture shape |
+|---|---|---|
+| `left` | Picture in the fixed left column, under the title (default) | Tall / portrait |
+| `top` | Wide picture above the story | Wide / landscape |
+| `middle` | Picture inside the story, after paragraph `picture_after` (default 5), with `caption` under it | Wide |
+| `end` | Picture after the last line of the story, with `caption` under it | Wide |
+| `panel` | Picture fills the whole left side; title sits on top of it | Tall, quiet top half |
+| `strip` | Three square panels above the story, comic style | Three small drawings |
+
+Examples:
+
+```yaml
+picture: middle
+image: /assets/birds-wide.jpg
+image_alt: "Describe the picture."
+caption: "The birds kept coming down into the old tamarind."
+picture_after: 9
+```
+
+```yaml
+picture: strip
+strip:
+  - /assets/panel-1.jpg
+  - /assets/panel-2.jpg
+  - /assets/panel-3.jpg
+```
+
+No `image:` line (and not `strip`) means no picture; the left column shows only the title.
+
+Image tips: lowercase file names with hyphens, no spaces; .jpg or .webp under 300 KB; upload with the final name, do not rename on GitHub (it can empty the file).
+
 ## Files
 
 - `_config.yml` — site settings and the `/slug/` URL shape
