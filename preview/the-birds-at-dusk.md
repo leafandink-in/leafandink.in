@@ -4,12 +4,14 @@ permalink: /preview/the-birds-at-dusk/
 title: "The Birds at Dusk"
 issue: "issue three"
 kind: "Fiction"
-minutes: 6
-standfirst: "One line under the title."
+minutes: 4
+standfirst: "She was slow at everything except noticing."
+image: /assets/birds-at-dusk.jpg
+image_alt: "A girl kneeling under a tamarind tree, her hand flat on the soil."
 date: 2026-10-18
 ---
-# The Birds at Dusk
 
+Long ago, in a dry village near the Vindhya hills, there lived a girl named Nila.
 Long ago, in a dry village near the Vindhya hills, there lived a girl named Nila.
 
 She could not carry two water pots at once the way the other girls did. She went up a tree slowly and came down slower. When the children ran to the far field and back, she arrived last, every time, and stopped expecting not to.
