@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% if page.layout == "issue" %}{% assign d = page %}{% elsif page.url == "/" %}{% assign d = site.posts.first %}{% endif %}
-<title>{% if d %}{{ d.title }} — Leaf &amp; Ink, {{ d.issue }}{% else %}{{ page.title }} — Leaf &amp; Ink{% endif %}</title>
+<title>{% if d %}{{ d.title }} Leaf &amp; Ink, {{ d.issue }}{% else %}{{ page.title }} Leaf &amp; Ink{% endif %}</title>
 <meta name="description" content="{% if d %}{{ d.standfirst | strip_html }}{% else %}One story at a time.{% endif %}">
 <meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
