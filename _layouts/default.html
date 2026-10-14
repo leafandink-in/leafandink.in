@@ -175,6 +175,31 @@ figure img{
   .story{margin-top:0}
 }
 
+
+/* ---------- picture options (set with  picture:  in the story file) ---------- */
+
+/* top: wide picture above the story */
+.wide{margin:0 0 2rem;max-width:var(--measure)}
+.wide img{width:100%;max-height:none;margin:0}
+
+/* middle / end: picture inside the story, with optional caption */
+.plate{margin:2.2rem 0 2.4rem;max-width:var(--measure)}
+.plate img{width:100%;max-height:none;margin:0}
+.plate figcaption{font-size:.85rem;font-style:italic;color:var(--quiet);margin-top:.5rem}
+
+/* strip: three square panels, comic style */
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;max-width:var(--measure);margin:0 0 2rem}
+.strip img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border:2px solid #111}
+
+/* panel: picture fills the whole left side, title sits on it */
+.bleed{background-position:center 40%;background-size:cover;height:48vh;margin:0 calc(var(--side) * -1) 1.6rem}
+@media (min-width:60rem){
+  .bleed{position:fixed;left:0;top:var(--hdr);bottom:var(--bar);height:auto;margin:0;z-index:-1;
+    width:calc(max(0px,(100vw - var(--wrap)) / 2) + var(--side) + var(--rail) + var(--gap) / 2)}
+  .pic-panel .side{border-right:0;color:#fff}
+  .pic-panel .side .head{background:rgba(0,0,0,.42);padding:1.1rem 1.2rem 1rem;margin-right:-1.2rem}
+}
+
 /* ---------- subscribe, once, after the story ---------- */
 
 .foot{
