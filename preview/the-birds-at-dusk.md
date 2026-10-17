@@ -17,82 +17,80 @@ Nila could not carry two water pots at once. She climbed trees slowly and came d
 
 What Nila did was notice. She knew which trees the doves settled in at dusk and which ones they only flew past. Behind the threshing floor was a patch of grass that stayed green through the hottest months, and she knew that too, and where the ground stayed cool under her bare feet long after the sun had gone.
 
-That year the rains did not come. The village pond grew smaller every week. Soon there was only a muddy patch in the middle, and the cattle crowded round it, pushing one another for water.
+Walking home with her father, she would stop to watch a line of ants, or a lizard on a wall, and he would have to turn back for her.
 
-The elders decided the village needed a new well. They chose a place near the centre so that everyone could reach it easily. The men dug for six days. First they found dry earth. Then stones. Then more stones.
+"Come, Nila. You notice too many things."
+
+That year the rains did not come. The pond grew smaller every week. Soon there was only a muddy patch in the middle, and the cattle crowded round it, pushing one another for water.
+
+The elders decided the village needed a new well. They chose a place near the centre so that everyone could reach it easily. Nila's father dug with the other men for six days. First they found dry earth. Then stones. Then more stones.
 
 No water.
 
-They tried another place. Again nothing. People began to worry.
+They tried another place. Again nothing. Her father came home each evening with his palms torn and sat outside without eating much.
 
-"If the rains do not come," someone said, "we may have to leave."
+"If the rains do not come," her mother said one night, "we may have to go to Dhanora."
 
-The nearest stepwell was at Dhanora, seven miles away, and it was not theirs.
+The stepwell at Dhanora was seven miles away, and it was not theirs. Her father did not answer. Later Nila heard him counting the brass vessels in the dark.
 
-One morning Nila went to collect firewood near the edge of the fields. As she passed the old tamarind she stopped. Doves were flying down into its branches. Not one or two. Several of them.
+One morning she went to collect firewood near the edge of the fields. As she passed the old tamarind she stopped. Doves were flying down into its branches. Not one or two. Several of them.
 
-Nila stood watching. She had seen those birds many times. When they were only resting they stayed high in the branches. These kept dropping towards the ground and going up again.
+She had seen those birds many times. When they were only resting they stayed high in the branches. These kept dropping towards the ground and going up again.
 
-She walked closer. The earth looked dry and cracked, like everywhere else. But beside the tree was a narrow strip of green grass, and it was not under the tree's shade.
+She walked closer. The earth looked dry and cracked, like everywhere else. But beside the tree was a narrow strip of grass, the same green as the patch behind the threshing floor, and it was not in the tree's shade.
 
-Nila knelt and pressed her palm against the ground. The soil felt cool. She lifted a stone, and the earth underneath was damp, and small flies came up out of it.
+Nila knelt and pressed her palm against the ground. The soil was cool. She lifted a stone, and the earth underneath was damp, and small flies came up out of it.
 
 That evening she told her father.
 
 "I think there may be water near the old tamarind."
 
-Her father looked at her. "The elders already chose the best places."
+He was rubbing oil into his hands. "The elders already chose the best places."
 
 "But the grass is still green there."
 
 "The tree gives it shade."
 
-"The green grass is outside the shade."
+"The green is outside the shade."
 
-Her father was quiet.
+He was quiet for a while.
 
-"And the doves keep coming down there every evening," Nila added.
+"And the doves keep coming down there every evening."
 
-He smiled tiredly. "You notice too many things."
+He smiled, but tiredly. "You notice too many things."
 
-The next morning Nila went to the elders herself. They listened for a while. Then one of the men laughed.
+The next morning Nila went back to the tamarind and knelt beside it with her palm flat on the earth.
 
-"There are farmers here who have worked this land for forty years."
+Old Mallappa came along the field path the way he did every morning, one step and then his stick and then another step. He was the only person in the village slower than she was. He saw her kneeling there and stopped.
 
-"I know," Nila said.
+Then, very slowly, holding on to his stick, he got down beside her and put his own palm flat on the earth next to hers. He kept it there a long time.
 
-"And you think you know where the water is?"
+"Cool," he said.
 
-Nila shook her head. "I do not know where the water is. I only think we should look."
+Nila nodded. "And the doves keep coming down here. Only here."
 
-The men were about to send her away when old Mallappa lifted his walking stick.
+He looked up into the tamarind, and then at the cracked earth, and then at her. He leaned on his stick for a while and said nothing.
 
-"She is not asking us to dig another well," he said. "She is asking us to look."
+"Show me," he said.
 
-So a few of them followed her out to the tamarind. She showed them the strip of green grass. She lifted the stone and showed them the damp soil underneath.
+She showed him the strip of grass. She lifted the stone.
 
-Mallappa knelt and began scraping the earth with his fingers. A little below the surface the soil was dark. He looked up.
+Mallappa began scraping at the earth with his fingers. A little below the surface the soil turned dark. He rubbed some of it between his thumb and finger and looked up.
 
-"Bring a spade."
+Tippu was crossing the field with his goats. Mallappa called him over.
 
-They started digging. By noon the hole was more than knee-deep and the earth coming up was damp. By afternoon word had spread through the village, and people gathered round while the men took turns.
+"Run and fetch Nila's father. Tell him to bring a spade."
 
-The next morning there was a small pool of water at the bottom of the pit.
+Tippu was gone before he had finished.
 
-Nobody laughed then.
+By noon the hole was more than knee-deep and the earth coming up was wet enough to hold the shape of a hand. By afternoon half the village had gathered. Nila's father was in the pit by then, digging with his torn hands, and he did not stop when the others took turns.
 
-They widened the hole, dug deeper, and lined the sides with stone. A few days later they had a working well.
+The next morning there was a small pool of brown water at the bottom.
 
-One evening Nila sat beside it while people came and went with their water pots. Her father came and sat down next to her. For a while neither of them spoke.
+They widened the hole, dug deeper, and lined the sides with stone. A few days later the bucket came up full.
 
-Then he said, "I should have listened to you."
+The first evening the well was used, Nila filled one pot and set it on her hip. Her father filled a second one, lifted it onto his shoulder, and waited for her.
 
-Nila looked at the well. "You listened in the end."
+They walked home together the long way, past the tamarind, at her pace. Halfway there she stopped to watch the doves come down.
 
-Her father smiled. They sat there together, listening to the rope creak as another bucket went down.
-
-Nila never became the fastest girl in the village, and she never became the strongest. But other villages began to send for her.
-
-She would walk slowly across their land, looking at the trees and the grass and the birds and the ground, and she would not say much.
-
-And every now and then she would stop, and kneel down, and put her palm flat against the earth, and wait.
+He stopped too.
