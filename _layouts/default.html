@@ -10,7 +10,7 @@
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,300;1,7..72,400;1,7..72,500&display=swap" rel="stylesheet">
 
 <style>
 :root{
@@ -18,8 +18,9 @@
   --ink:#000;
   --quiet:#777;
   --hair:#ddd;
-  --wordmark:#23252B;
-  --accent:#344ED8;
+  --leaf:#566640;
+  --amp:#8A8174;
+  --accent:#1F3A93;   /* fountain-pen ink blue */
   --side:clamp(1.5rem,6vw,4rem);
   --measure:38rem;
   --wrap:76rem;
@@ -69,15 +70,15 @@ a:focus-visible,input:focus-visible,button:focus-visible{
 }
 .masthead .top a:hover{border-bottom-color:var(--ink)}
 .masthead .name{
-  font-family:"Figtree","Helvetica Neue",Arial,sans-serif;
-  font-weight:800;
-  font-size:clamp(1.6rem,4vw,2.1rem);
-  letter-spacing:-.02em;
-  color:var(--wordmark);
+  font-family:"Literata",Georgia,serif;
+  font-size:clamp(1.7rem,4.2vw,2.2rem);
+  letter-spacing:-.01em;
   line-height:1;
   margin:0;
 }
-.masthead .name .amp{color:var(--accent)}
+.masthead .name .leaf{font-style:italic;font-weight:500;color:var(--leaf)}
+.masthead .name .amp{font-style:italic;font-weight:300;color:var(--amp)}
+.masthead .name .ink{font-weight:700;color:var(--accent)}
 .masthead .issue{
   font-size:.9375rem;
   font-style:italic;
@@ -235,7 +236,7 @@ button{cursor:pointer;font-style:italic}
   box-shadow:0 1px 2px rgba(0,0,0,.15);
   transition:background .15s,box-shadow .15s,transform .08s;
 }
-.foot button:hover{background:var(--accent);box-shadow:0 4px 12px rgba(52,78,216,.3)}
+.foot button:hover{background:var(--accent);box-shadow:0 4px 12px rgba(31,58,147,.3)}
 .foot button:active{transform:translateY(1px) scale(.97);box-shadow:none}
 .foot button:disabled{opacity:.6;cursor:default}
 .masthead .top a[href="#subscribe"],
