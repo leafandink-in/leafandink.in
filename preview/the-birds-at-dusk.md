@@ -2,7 +2,7 @@
 layout: issue
 permalink: /preview/the-birds-at-dusk/
 title: "The Birds at Dusk"
-issue: "Issue No:1"
+issue: "Issue No: 1"
 kind: "Fiction"
 minutes: 5
 standfirst: "She was slow at everything except noticing."
