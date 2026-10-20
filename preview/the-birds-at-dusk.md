@@ -2,13 +2,13 @@
 layout: issue
 permalink: /preview/the-birds-at-dusk/
 title: "The Birds at Dusk"
-issue: "1"
+issue: "Issue No:1"
 kind: "Fiction"
 minutes: 5
 standfirst: "She was slow at everything except noticing."
 image: /assets/birds-at-dusk.jpg
 image_alt: "A girl kneeling under a tamarind tree, her hand flat on the soil, birds in the branches above."
-date: 2026-10-18
+date: 2026-10-20
 ---
 
 There was only one pond in the village below the Vindhya hills. In a good year it was deep enough for the cattle to stand in. In a dry year you could walk almost to the middle without getting your knees wet.
