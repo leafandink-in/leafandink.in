@@ -4,7 +4,7 @@ issue: "issue 2"
 kind: "Fiction"
 minutes: 4
 standfirst: "A potter's son sits a test against the sons of ministers, and one sack among hundreds is spoiled."
-image: /assets/The Granary Keeper_ Leaf & Ink.png
+image: /assets/The_Granary_Keeper.png
 image_alt: "A young man in plain cotton kneels on a granary floor, pointing at a line of ants running from a spilled sack of grain, while four richly dressed young men and a minister watch him from behind."
 date: 2026-10-25
 slug: the-granary-keeper
