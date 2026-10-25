@@ -1,10 +1,10 @@
----
+<img width="1149" height="1368" alt="The Granary Keeper_ Leaf   Ink" src="https://github.com/user-attachments/assets/6e3a834f-ed0a-423b-9501-ba794d778943" />---
 title: "The Granary Keeper"
 issue: "issue 2"
 kind: "Fiction"
 minutes: 4
 standfirst: "A potter's son sits a test against the sons of ministers, and one sack among hundreds is spoiled."
-image: /assets/granary.webp
+image: /assets/The Granary Keeper_ Leaf & Ink.png
 image_alt: "A young man in plain cotton kneels on a granary floor, pointing at a line of ants running from a spilled sack of grain, while four richly dressed young men and a minister watch him from behind."
 date: 2026-10-25
 slug: the-granary-keeper
