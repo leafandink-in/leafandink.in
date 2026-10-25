@@ -1,6 +1,6 @@
 ---
 title: "The Granary Keeper"
-issue: "issue 2"
+issue: "Issue no: 2"
 kind: "Fiction"
 minutes: 4
 standfirst: "A potter's son sits a test against the sons of ministers, and one sack among hundreds is spoiled."
