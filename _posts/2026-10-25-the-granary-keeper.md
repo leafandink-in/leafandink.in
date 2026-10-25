@@ -1,4 +1,4 @@
-<img width="1149" height="1368" alt="The Granary Keeper_ Leaf   Ink" src="https://github.com/user-attachments/assets/6e3a834f-ed0a-423b-9501-ba794d778943" />---
+---
 title: "The Granary Keeper"
 issue: "issue 2"
 kind: "Fiction"
