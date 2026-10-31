@@ -6,7 +6,7 @@ minutes: 7
 standfirst: "A young merchant needs fifty carts and owns twenty. The man who has the other thirty wants his name on them."
 image: /assets/rainy-bullock-cart-convoy-at-dusk.png
 image_alt: "A line of loaded bullock carts moving along a wet road at dusk in the rain, lamps lit under the axles."
-date: 2026-11-01
+date: 2026-10-31
 slug: the-hill-road
 ---
 
