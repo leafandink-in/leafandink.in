@@ -1,6 +1,6 @@
 ---
 title: "The Hill Road"
-issue: "issue three"
+issue: "issue 3"
 kind: "Fiction"
 minutes: 7
 standfirst: "A young merchant needs fifty carts and owns twenty. The man who has the other thirty wants his name on them."
