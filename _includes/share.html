@@ -1,0 +1,47 @@
+{% comment %}
+  Save as:  _includes/share.html
+
+  Add one line to _includes/issue.html, directly BEFORE this existing line:
+      {% include subscribe.html %}
+  the new line being:
+      {% include share.html doc=d %}
+
+  It always points at the story's own page, never at "/", so a link shared
+  from the home page still works after next Sunday's story replaces it.
+
+  The ?utm_source tags are what let you tell WhatsApp forwards apart from
+  Instagram and YouTube traffic in your analytics.
+{% endcomment %}
+
+{% assign s = include.doc %}
+{% assign story_url = s.url | absolute_url %}
+{% assign wa_url = story_url | append: "?utm_source=whatsapp&utm_medium=share" %}
+{% assign wa_text = s.title | append: " — a story from Leaf & Ink. " | append: wa_url %}
+
+<section class="share">
+  <p class="share-intro">If this one stayed with you, send it on.</p>
+  <p class="share-links">
+    <a class="pill" href="https://wa.me/?text={{ wa_text | url_encode }}"
+       target="_blank" rel="noopener">WhatsApp</a>
+    <a class="pill" href="mailto:?subject={{ s.title | url_encode }}&amp;body={{ wa_text | url_encode }}">Email</a>
+    <button class="pill" type="button" data-copy="{{ story_url }}?utm_source=copy&amp;utm_medium=share">Copy link</button>
+  </p>
+</section>
+
+<script>
+(function(){
+  var b = document.querySelector('.share button[data-copy]');
+  if (!b) return;
+  b.addEventListener('click', function(){
+    var t = b.getAttribute('data-copy');
+    function done(){ var o = b.textContent; b.textContent = 'Copied'; setTimeout(function(){ b.textContent = o; }, 1600); }
+    if (navigator.clipboard) { navigator.clipboard.writeText(t).then(done, done); }
+    else {
+      var i = document.createElement('textarea');
+      i.value = t; document.body.appendChild(i); i.select();
+      try { document.execCommand('copy'); } catch(e){}
+      document.body.removeChild(i); done();
+    }
+  });
+})();
+</script>
