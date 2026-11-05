@@ -6,6 +6,21 @@
 {% if page.layout == "issue" %}{% assign d = page %}{% elsif page.url == "/" %}{% assign d = site.posts.first %}{% endif %}
 <title>{% if d %}{{ d.title }} · Leaf &amp; Ink, {{ d.issue }}{% else %}{{ page.title }} · Leaf &amp; Ink{% endif %}</title>
 <meta name="description" content="{% if d %}{{ d.standfirst | strip_html }}{% else %}One story at a time.{% endif %}">
+{% assign og_image = d.image %}
+<meta property="og:site_name" content="Leaf &amp; Ink">
+<meta property="og:locale" content="en_IN">
+<meta property="og:type" content="{% if d and page.layout == 'issue' %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{% if d %}{{ d.title | strip_html | escape }}{% else %}Leaf &amp; Ink{% endif %}">
+<meta property="og:description" content="{% if d %}{{ d.standfirst | strip_html | escape }}{% else %}One story at a time.{% endif %}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+{% if og_image %}<meta property="og:image" content="{{ og_image | absolute_url }}">
+<meta property="og:image:alt" content="{{ d.image_alt | default: 'Illustration for this story' | escape }}">{% endif %}
+{% if page.layout == 'issue' %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if d %}{{ d.title | strip_html | escape }}{% else %}Leaf &amp; Ink{% endif %}">
+<meta name="twitter:description" content="{% if d %}{{ d.standfirst | strip_html | escape }}{% else %}One story at a time.{% endif %}">
+{% if og_image %}<meta name="twitter:image" content="{{ og_image | absolute_url }}">{% endif %}
+<link rel="canonical" href="{{ page.url | absolute_url }}">
 <meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -201,6 +216,52 @@ figure img{
   .pic-panel .side .head{background:rgba(0,0,0,.42);padding:1.1rem 1.2rem 1rem;margin-right:-1.2rem}
 }
 
+/* ---------- share, sits above the subscribe block ----------
+   Paste into the <style> block in _layouts/default.html,
+   just before the "subscribe, once, after the story" section.      */
+
+.share{
+  max-width:var(--measure);
+  margin:3.2rem 0 0;
+  padding-top:1.4rem;
+  border-top:1px solid var(--hair);
+}
+.main .share{margin:3.2rem 0 0}
+
+.share .share-intro{
+  margin:0 0 .9rem;
+  font-size:1rem;
+  font-style:italic;
+}
+
+.share .share-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem;
+  margin:0;
+}
+
+.share .pill{
+  font:inherit;
+  font-size:.9375rem;
+  line-height:1;
+  color:var(--accent);
+  background:transparent;
+  border:1px solid var(--accent);
+  border-radius:999px;
+  padding:.45rem 1.05rem;
+  cursor:pointer;
+  transition:background .15s,color .15s;
+}
+.share .pill:hover{
+  background:var(--accent);
+  color:#fff;
+}
+
+/* the subscribe block already draws its own rule, so drop the double line */
+.share + .foot{border-top:0;margin-top:2.4rem}
+.main .share + .foot{margin-top:2.4rem}
+
 /* ---------- subscribe, once, after the story ---------- */
 
 .foot{
@@ -293,5 +354,8 @@ button{cursor:pointer;font-style:italic}
   size();tick();
 })();
 </script>
+<script data-goatcounter="https://leafandink.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
+
 </html>
