@@ -1,29 +1,43 @@
 {% comment %}
-  Save as:  _includes/share.html
+  _includes/share.html
 
-  Add one line to _includes/issue.html, directly BEFORE this existing line:
-      {% include subscribe.html %}
-  the new line being:
-      {% include share.html doc=d %}
+  To change what people send, edit the line marked MESSAGE.
+  Some alternatives:
+    "Thought you'd like this one. "
+    "This seemed like your kind of story. "
+    "Read this today and thought of you. "
+    "A story I liked. "
 
-  It always points at the story's own page, never at "/", so a link shared
-  from the home page still works after next Sunday's story replaces it.
+  Two things that are easy to break if you edit this:
 
-  The ?utm_source tags are what let you tell WhatsApp forwards apart from
-  Instagram and YouTube traffic in your analytics.
+  1. The  | replace: '+', '%20'  filters. Jekyll's url_encode writes a
+     space as "+", which WhatsApp does not read as a space. Without the
+     replace the message arrives full of plus signs.
+
+  2. The  nl  capture below is a real line break. It puts the link on its
+     own line with a blank line above it, which is why the message reads
+     cleanly instead of running into the URL.
 {% endcomment %}
 
 {% assign s = include.doc %}
 {% assign story_url = s.url | absolute_url %}
 {% assign wa_url = story_url | append: "?utm_source=whatsapp&utm_medium=share" %}
-{% assign wa_text = s.title | append: " — a story from Leaf & Ink. " | append: wa_url %}
+
+{% capture nl %}
+{% endcapture %}
+
+{% comment %} MESSAGE {% endcomment %}
+{% assign wa_text = "Thought you'd like this one. " | append: s.title | append: ", a short story from Leaf & Ink." | append: nl | append: nl | append: wa_url %}
+
+{% assign wa_enc = wa_text | url_encode | replace: '+', '%20' %}
+{% assign subj_enc = s.title | url_encode | replace: '+', '%20' %}
 
 <section class="share">
   <p class="share-intro">If this one stayed with you, send it on.</p>
   <p class="share-links">
-    <a class="pill" href="https://wa.me/?text={{ wa_text | url_encode }}"
+    <a class="pill" href="https://wa.me/?text={{ wa_enc }}"
        target="_blank" rel="noopener">WhatsApp</a>
-    <a class="pill" href="mailto:?subject={{ s.title | url_encode }}&amp;body={{ wa_text | url_encode }}">Email</a>
+    <a class="pill" href="mailto:?subject={{ subj_enc }}&amp;body={{ wa_enc }}">Email</a>
     <button class="pill" type="button" data-copy="{{ story_url }}?utm_source=copy&amp;utm_medium=share">Copy link</button>
   </p>
 </section>
