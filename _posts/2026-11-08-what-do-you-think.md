@@ -4,7 +4,7 @@ issue: "Issue 4"
 kind: "Fiction"
 minutes: 4
 standfirst: "She could do every job in the workshop. She asked instead."
-image: /assets/RainyWorkshop.png
+image: /assets/RainyWorkshop.jpg
 image_alt: "A woman in a Kanchipuram lamp workshop looking up at a hole in the roof, rain coming through onto racks of unfired clay lamps, her workers gathered around her."
 date: 2026-11-07
 slug: what-do-you-think
