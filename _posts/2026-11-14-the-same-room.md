@@ -10,7 +10,7 @@ date: 2026-11-14
 slug: the-same-room
 ---
 
-Long ago, on the road between Ujjain and the western ports, there stood a small travellers' rest house. Merchants, pilgrims and scholars stopped there on their journeys.
+Long ago, on the road between Ujjain and sea in the west, there stood a small travellers' rest house. Merchants, pilgrims and scholars stopped there on their journeys.
 
 The dharmashala belonged to an elderly man named Keshav, and his daughter Leela helped him run it. The building was nothing much: twelve rooms, a courtyard, a stable for bullocks and horses, and a large neem tree near the well.
 
