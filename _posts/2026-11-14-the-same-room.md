@@ -4,7 +4,7 @@ issue: "Issue 5"
 kind: "Fiction"
 minutes: 4
 standfirst: "Some travellers came back for the room she remembered before they asked."
-image: /assets/the-same-room.jpg
+image: /assets/The_Same_Room_at_Dusk.jpg
 image_alt: "A young woman in a plain cream sari stands in the doorway of a roadside dharmashala at dusk, holding an oil lamp and gesturing towards the courtyard. Behind her a neem tree shades a well, and an old man with a stick is helped across the stones while bullock carts wait by the stable."
 date: 2026-11-14
 slug: the-same-room
