@@ -4,7 +4,7 @@ issue: "Issue 6"
 kind: "Fiction"
 minutes: 10
 standfirst: "When everyone turned away, one friend came closer."
-image: /assets/the-silk-wrapping.jpg
+image: /assets/the-silk-wrapping.png
 image_alt: "A storyteller sits under a tree at a festival, holding open a painted scroll that shows a palace among hills, while children sit in front of her and two women listen from behind."
 date: 2026-11-21
 slug: the-silk-wrapping
